@@ -14,11 +14,12 @@ const reverseString = function(userString) {
     let i = 0;
 
     while (i < arrayLength) {
-        i++
-        reverseArray.push(newArray-i);
+        const originalIndex = arrayLength -1 -i;
+        reverseArray.push(newArray[originalIndex]);
+        i++;
     }
 
-    return reverseArray.join();
+    return reverseArray.join('');
 };
 
 //Test
